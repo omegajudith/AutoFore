@@ -1,0 +1,1778 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+
+
+
+
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #ff5722;
+  background-color: white;
+  font-family: Roboto;
+}
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Menu Styling */
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-menu li a:hover {
+  color: #ff5722;
+}
+
+
+
+
+
+
+
+
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.cta-button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Specific styles for Login and Sign Up buttons */
+.cta-button.login {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  text-decoration: none;
+}
+
+.cta-button.login:hover {
+  color: white;
+  background-color: black;
+}
+
+.cta-button.signup {
+  color: white;
+  background-color: #ff5722;
+  border: 2px solid #ff5722;
+  text-decoration: none;
+}
+
+.cta-button.signup:hover {
+  background-color: white;
+  color: #ff5722;
+}
+
+
+
+
+
+
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Headline */
+.hero-headline {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Subheadline - "GET A QUOTE" */
+.hero-subheadline {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff5722; /* Orange color */
+  margin-bottom: 20px;
+}
+
+/* Description Text */
+.hero-description {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Highlighted Link Text */
+.hero-description a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero-description a:hover {
+  text-decoration: underline;
+}
+
+/* Book Now Button */
+.book-now-button {
+  padding: 12px 30px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+  background-color: #e64a19;
+}
+
+
+
+
+
+
+
+
+
+
+/* the cards */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  background-color: #f9f9f9;
+  justify-items: center;
+}
+
+/* Individual service card styling */
+.service-card {
+  background-color: #ffffff; /* White background for each card */
+  width: 150px; /* Set consistent width */
+  height: 200px; /* Set consistent height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect on each card */
+.service-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+/* Icon styling */
+.service-card-icon {
+  font-size: 40px; /* Size of icon */
+  margin-bottom: 10px;
+}
+
+/* Title styling */
+.service-card-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
+
+
+
+/* how it works */
+.how-it-works-section {
+  background-color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Title styling */
+.how-it-works-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Cards container */
+.how-it-works-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual card styling */
+.how-it-works-card {
+ background-color: #f9f9f9;
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: #333;
+}
+
+/* Icon styling */
+.how-it-works-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* Step title styling */
+.how-it-works-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Step description styling */
+.how-it-works-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+/* Form Section */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #f9f9f9; /* Light background to separate it from the main background */
+  text-align: center;
+}
+
+.form-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px; /* Limit form width */
+}
+
+.form-container input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-container input:focus {
+  border-color: #ff5722; /* Focus color to match theme */
+  outline: none;
+}
+
+.form-container button {
+  background-color: #ff5722;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #ff5722; 
+}
+
+
+
+
+
+
+
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.testimonial-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-image {
+  font-size: 60px; 
+  margin-right: 20px;
+}
+
+.testimonial-text {
+  text-align: left;
+  max-width: 600px;
+}
+
+.testimonial-quote {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.testimonial-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.testimonial-position {
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+
+
+
+.footer {
+  background-color: #f1592a; /* Adjusted orange background */
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  text-align: left;
+  margin: 10px;
+  min-width: 200px; /* Ensures columns are aligned even on smaller screens */
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  color: #f1592a; /* Orange color for icon */
+  background-color: white;
+  border-radius: 4px; /* Slightly rounded corners */
+  padding: 8px;
+  font-size: 18px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Hover effect for slight enlargement */
+}
+
+
+
+
+
+
+/* Center the form container in the viewport */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Styling for the main form container */
+.signup-form {
+  width: 350px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Form heading */
+.signup-form h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input field styling */
+.signup-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Styling for the submit button */
+.signup-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.signup-submit:hover {
+  background-color: #e64a19;
+}
+
+/* Styling for the login link below the submit button */
+.signup-login {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.signup-login span {
+  color: #ff5722;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.signup-login span:hover {
+  color: #e64a19;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Details.css */
+.details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.details-form {
+  text-align: center;
+  padding: 30px;
+  max-width: 300px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.details-form h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-link{
+  color:#e05800;
+  text-decoration: none;
+}
+
+.details-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.details-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-submit:hover {
+  background-color: #e64a19;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container for the login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Login Header Styling */
+.login-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Fields */
+.login-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #e53e00;
+}
+
+/* Forgot Password and Signup Links */
+.login-footer {
+  margin-top: 20px;
+}
+
+.forgot-password-link {
+  color: #ff4500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.login-footer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.signup-link {
+  color: #ff4500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Forgot Password Container */
+.forgot-password-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Forgot Password Header */
+.forgot-password-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Field */
+.forgot-password-container input {
+  width: 90%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.forgot-password-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff4500;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.forgot-password-container button:hover {
+  background-color: #e53e00;
+}
+
+/* Already have an account? Link */
+.forgot-password-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.forgot-password-footer a {
+  color: #ff4400be;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-password-footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+.login-footer .login-link {
+  color: rgba(208, 61, 11, 0.899); 
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+.login-footer .login-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* dashboard */
+.dashboard {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Sidebar Styling */
+.dashboard-sidebar {
+  width: 220px; /* Fixed sidebar width */
+  background-color: #fff; /* White background for sidebar */
+  padding: 20px;
+  border-right: 1px solid #e5e5e5; /* Divider line for sidebar */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f96332; /* Autofore's brand color */
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.nav-item-icon {
+  margin-right: 10px;
+  color: #0f0e0e;
+}
+
+.nav-item:hover {
+  color: #f76b3a;
+}
+
+.logout-button {
+  margin-top: 20px;
+  background-color: #f96332; /* Autofore's theme color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #f76b3a;
+}
+
+/* Main Content */
+.main-content {
+  flex-grow: 1; /* Grow to fill available space */
+  padding: 40px;
+  overflow-y: auto; /* Enable scrolling if the content exceeds height */
+}
+
+.welcome-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.garages-list {
+  margin-top: 30px;
+}
+
+/* Garage Items */
+.garage-item {
+  border: 1px solid #e5e5e5;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.garage-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-appointment {
+  background-color: #f96332; /* Autofore's theme color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.book-appointment:hover {
+  background-color: #f76b3a;
+}
+
+
+
+
+
+
+
+
+
+/* Search Section Container */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Location Search Input */
+.search-section .location-search {
+  flex: 2;
+  padding: 10px;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-section .location-search:focus {
+  border-color: #f96332; /* Autofore's theme color */
+  box-shadow: 0 0 5px rgba(249, 99, 50, 0.4);
+  outline: none;
+}
+
+/* Dropdowns Styling */
+.search-section .dropdown {
+  flex: 1;
+  padding: 10px;
+  margin-right: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-section .dropdown:focus,
+.search-section .dropdown:hover {
+  border-color: #f96332; /* Autofore's theme color */
+  box-shadow: 0 0 5px rgba(249, 99, 50, 0.4);
+  outline: none;
+}
+
+/* Adjust Spacing for Last Dropdown */
+.search-section .dropdown:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for Each Garage Item - Compact Horizontal Card */
+.garage-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+   background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0; /* Light border to separate the card visually */
+  margin-bottom: 15px; /* Spacing between garage items */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover Effect: Change Background to Darker Shade */
+.garage-item:hover {
+  background-color: #f5f5f5; /* Darker version of white for hover */
+}
+
+/* Styling for Details within the Garage Item */
+.garage-item .details {
+  flex: 1;
+}
+
+/* Rating Styling: Golden Stars */
+.garage-item .rating {
+  font-size: 1.2em;
+  color: #ffbf00; /* Golden color for stars */
+  margin-left: 0px;
+}
+
+/* Styling for the Contact Details */
+.garage-item .contact-info {
+  margin-left: 20px;
+  flex: 1;
+}
+
+/* Book Appointment Button */
+.garage-item .book-appointment {
+  background-color: #f96332; 
+  color: #fff;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Book Appointment Button */
+.garage-item .book-appointment:hover {
+  background-color: #e55028; /* Slightly darker orange */
+}
+
+
+
+
+
+
+/* Appointments Summary Cards Section */
+.appointments-header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6; /* Light grey border */
+  text-align: center;
+  padding: 30px;
+  width: 300px; /* Make the card wider */
+  height: 120px; /* Decrease height to emphasize rectangular shape */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* General Dashboard Styling */
+.dashboard {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Appointments Summary Cards Section */
+.appointments-header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.card {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6; /* Light grey border */
+  height: 150px;
+  width: 80px; /* Ensure the box is rectangular */
+  display: flex;
+  overflow: hidden; /* Ensures split colors stay clean */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Minimal box shadow for subtle depth */
+  text-align:center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px; /* Add some horizontal padding */
+}
+
+/* Split Color for Honoured and Cancelled Appointments */
+.honoured-appointments {
+  background: linear-gradient(to right, #2ecc71 20%, #ffffff 80px);
+}
+
+.cancelled-appointments {
+  background: linear-gradient(to right, #e74c3c 20%, #ffffff 80px);
+}
+
+/* Style the numbers and labels consistently for all cards */
+.card h3 {
+  font-size: 2rem;
+  margin: 0;
+  width: 50%; /* Restrict width to keep in half of the card */
+  color: black; /* White color for numbers on colored halves */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  width: 50%; /* Restrict width to keep in the white half of the card */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Colors for Total and Pending Appointments */
+.total-appointments h3 {
+  color: #ff6200; /* Orange for Total Appointments */
+}
+
+.pending-appointments h3 {
+  color: #f8b400; /* Yellow for Pending Appointments */
+}
+
+/* Appointment Details Section */
+.appointments-details {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Appointment Details Card */
+.appointment-details-card {
+  flex: 2;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-details-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.appointment-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.provide-feedback {
+  color: #ff6200;
+  cursor: pointer;
+}
+
+/* Appointment History Section */
+.appointments-history {
+  flex: 1;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-history h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.appointments-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.appointments-table td {
+  color: #333;
+}
+
+
+
+
+
+/* Appointment Details Card */
+.appointment-details-card {
+  flex: 1; /* Adjust to share equal space with the history section */
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3; /* Light grey border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle depth */
+  background: #ffffff; /* White background */
+}
+
+/* Header for Appointment Details */
+.appointment-details-card h4 {
+  margin: 0; /* Remove bottom margin */
+  padding-bottom: 10px; /* Add padding to create space below the title */
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #e6e6e6; /* Light grey line to separate the title */
+}
+
+/* Styling for Appointment Information */
+.appointment-info {
+  margin-top: 10px; /* Space between title and content */
+}
+
+.appointment-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.appointment-info p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.provide-feedback {
+  color: #ff6200;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Appointment Details Card */
+.appointment-details-card {
+  flex: 1; /* Adjust to share equal space with the history section */
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3; /* Light grey border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle depth */
+  background: #ffffff; /* White background */
+}
+
+/* Header for Appointment Details */
+.appointment-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-details-card h4 {
+  margin: 0; /* Remove bottom margin */
+  padding-bottom: 10px; /* Add padding to create space below the title */
+  color: #333;
+  font-weight: bold;
+  border-bottom: 1px solid #e6e6e6; /* Light grey line to separate the title */
+}
+
+.appointment-status-header {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling for Appointment Information */
+.appointment-info {
+  margin-top: 10px; /* Space between title and content */
+}
+
+.appointment-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.appointment-info p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.provide-feedback {
+  color: #ff6200;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Appointment History Section */
+.appointments-history {
+  flex: 1; /* Adjust to share equal space with the details section */
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #d3d3d3; /* Light grey border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle depth */
+  background: #ffffff; /* White background */
+}
+
+.appointments-history h4 {
+  margin: 0;
+  padding-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Table Header for Date, Garage, Status - Aligned on the Same Line */
+.appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.appointments-table thead tr {
+  border-bottom: 1px solid #e6e6e6; /* Light grey border below the header row */
+}
+
+.appointments-table th {
+  text-align: left;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.appointments-table tbody {
+  border-bottom: 1px solid #e6e6e6; /* Border to separate header from body */
+}
+
+.appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #e6e6e6; /* Light grey narrow border below each row */
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Styling for "No Appointment" Row */
+.no-appointment-row td {
+  padding: 10px;
+  border-bottom: 1px solid #e6e6e6; /* Light grey border after "No Appointment" row */
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Results Summary below Appointment History */
+.results-summary {
+  text-align: right;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Vehicle Section Styling */
+.vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.vehicle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.vehicle-header h3 {
+  font-size: 2rem;
+  color: #ff6200; /* Orange for count */
+  margin: 0;
+}
+
+.add-new-button {
+  background: #ff6200;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.add-new-button:hover {
+  background: #e65c00; /* Slightly darker orange for hover effect */
+}
+.Add-New{
+  margin-top: 10px;
+}
+
+/* Vehicle Card Styling */
+.vehicle-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  height: 250px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  position: relative;
+  text-align: center;
+  
+}
+
+.vehicle-card-icon {
+  font-size: 3rem;
+  color: #ff6200; /* Orange for car icon */
+  margin-bottom: 10px;
+}
+
+.vehicle-card-plus-icon {
+  font-size: 2rem;
+  color: grey; 
+  margin-top:  30px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -100%);
+}
+
+.vehicle-card p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.vehicle-card:hover {
+  border-color: #ff6200; /* Change border color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+/* Ratings Page Styling */
+.ratings-container {
+  padding: 20px;
+}
+
+.ratings-container h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Filters Container */
+.filters-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Search by Garage Name */
+.garage-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.garage-name-input {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Date Range Filter */
+.date-range {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.date-range input {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 120px;
+}
+
+.calendar-icon {
+  color: #888;
+}
+
+/* Status Dropdown Filter */
+.status-dropdown {
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Reset Filters Button */
+.reset-filters {
+  color: #ff6200;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* No Ratings Placeholder Styling */
+.no-ratings {
+  text-align: center;
+  margin-top: 50px;
+  color: #555;
+}
+
+.no-ratings-icon {
+  font-size: 3rem;
+  color: #ff6200;
+  margin-bottom: 10px;
+}
+
+.no-ratings p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
+/* Main Settings Container */
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.settings-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.settings-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.settings-icon {
+  font-size: 1.8rem;
+  color: #ff6200;
+  margin-right: 10px;
+}
+
+/* Settings Section Titles */
+.settings-section-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.settings-field label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.settings-field input,
+.settings-field select,
+.settings-field textarea {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.settings-field input:focus,
+.settings-field select:focus,
+.settings-field textarea:focus {
+  outline: none;
+  border-color: #ff6200;
+  box-shadow: 0 0 5px rgba(255, 98, 0, 0.2);
+}
+
+/* Save Button */
+.save-button {
+  padding: 10px 20px;
+  background-color: #ff6200;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.save-button:hover {
+  background-color: #e05800;
+}
+
+.save-button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+/* Divider for Sections */
+.settings-divider {
+  height: 1px;
+  background-color: #e6e6e6;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+.vehicle-form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.vehicle-form-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.vehicle-form-content {
+  display: flex;
+  gap: 20px;
+}
+
+/* Image section with no border or shadow */
+.vehicle-image-upload {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+  border-radius: 8px;
+  height: 300px;
+  border: none;
+  box-shadow: none;
+}
+
+.image-placeholder {
+  color: #aaa;
+  text-align: center;
+}
+
+/* Form section with a thin, dark gray border around the inputs */
+.vehicle-details-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #a9a9a9; /* Thin, dark gray border */
+  border-radius: 4px; /* Optional: Adjust as needed */
+  background-color: white; /* To ensure a clear background */
+  box-shadow: none; /* Ensures no shadow */
+}
+
+/* Row styling for side-by-side inputs */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Standard form group styling */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.save-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
